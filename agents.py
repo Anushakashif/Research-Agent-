@@ -6,6 +6,8 @@ from tools import web_search , scrape_url
 from dotenv import load_dotenv
 
 load_dotenv()
+os.environ["OPENAI_API_KEY"] = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY") 
+
 
 #model setup 
 llm = ChatOpenAI(model = "gpt-4o-mini",temperature=0)
