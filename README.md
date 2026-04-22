@@ -5,7 +5,6 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)
 ![LangChain](https://img.shields.io/badge/LangChain-1.0-green?style=flat-square)
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-red?style=flat-square&logo=streamlit)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
 ---
 
