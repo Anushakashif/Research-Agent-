@@ -4,10 +4,14 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from tools import web_search , scrape_url 
 from dotenv import load_dotenv
+import streamlit as st
+import os
 
 load_dotenv()
-os.environ["OPENAI_API_KEY"] = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY") 
 
+# Safe secret loading
+OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY", ""))
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 #model setup 
 llm = ChatOpenAI(model = "gpt-4o-mini",temperature=0)
