@@ -8,6 +8,12 @@
 
 ---
 
+
+
+https://github.com/user-attachments/assets/13bca5aa-3006-4572-81b4-432bbfed62de
+
+
+
 ## What Is This?
 
 Most AI tools give you a chatbot. **ResearchMind gives you a research team.**
